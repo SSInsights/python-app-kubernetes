@@ -1,0 +1,1 @@
+# NLP python app for kubernetes pod
