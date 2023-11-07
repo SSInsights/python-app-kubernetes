@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mlapp
+  labels:
+    name: nlpApplication
+spec:
+  containers:
+  - name: nlp-app-container
+    image: shivmlops/mlapp
+    resources:
+      limits:
+        memory: "256Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 5000  
